@@ -1,0 +1,84 @@
+:root {
+  --primary-color: rgba(180, 66, 40, 0.75);
+  --overlay-color: rgba(24, 39, 051, 0.85);
+  --menu-speed: 0.75s;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+body {
+  font-family: "DotGothic16", sans-serif;
+  list-style: 1.4;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 3rem;
+}
+
+.showcase {
+  background-color: var(--primary-color);
+  color: white;
+  height: 100vh;
+  position: relative;
+}
+
+.showcase::before {
+  content: "";
+  background: url("../assets/images/aftermath_by_foxinuhhbox_debe6fq_at_devianart.png")
+    no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.showcase .showcase-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.showcase h1 {
+  font-family: "Xanh Mono", monospace;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.showcase h1::before {
+  content: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b35cb54f-d92a-45e3-a124-06abaf9ef45f/dbbjg7u-2fc0380c-bfd4-4df9-a44e-e5f2cb4620e6.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvYjM1Y2I1NGYtZDkyYS00NWUzLWExMjQtMDZhYmFmOWVmNDVmXC9kYmJqZzd1LTJmYzAzODBjLWJmZDQtNGRmOS1hNDRlLWU1ZjJjYjQ2MjBlNi5naWYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.nS4AchhcSk41g5JdCBsyxlLUy_TQMgHksOHjiU1_l7I");
+}
+
+.showcase p {
+  font-size: 1.3rem;
+}
+
+.readMore {
+  display: inline-block;
+
+  border: none;
+  background-color: var(--primary-color);
+  color: whitesmoke;
+  text-decoration: none;
+
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+
+  transition: opacity 1s ease-in;
+}
+
+.readMore:hover {
+  opacity: 0.7;
+}
