@@ -1,7 +1,7 @@
 .menu-wrap {
   position: fixed;
-  top: 0;
-  left: 0;
+  bottom: 5rem;
+  left: 50%;
   z-index: 1;
 }
 
@@ -23,7 +23,7 @@
   z-index: 1;
 
   width: 60px;
-  height: 60px;
+  height: 50px;
   padding: 1rem;
   background: var(--primary-color);
 
@@ -113,7 +113,7 @@
 }
 
 .menu-wrap .menu > div {
-  background: var(--overlay-color);
+  background: var(--primary-color);
 
   border-radius: 50%;
   width: 200vw;
@@ -137,11 +137,16 @@
   transition: opacity 0.4s ease;
 }
 
-.menu-wrap .menu > div > div > ul > li {
+.menu-wrap .menu > div > div > h1,
+.menu-wrap .menu > div > div > p {
   list-style: none;
   color: whitesmoke;
   font-size: 1.5rem;
   padding: 1rem;
+}
+
+.menu-wrap .menu > div > div > h1 {
+  font-size: 2.5rem;
 }
 
 .menu-wrap .menu > div > div > ul > li > a {
