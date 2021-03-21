@@ -1,0 +1,35 @@
+.navbar {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(243, 208, 188, 0.336);
+  position: relative;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+
+.navbar ul li {
+  list-style: none;
+  margin: 0.5rem 4rem 2rem 0;
+  display: inline-block;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: var(--menu-words-color);
+  font-size: 1.2rem;
+  padding: 0.3rem 1rem;
+  font-family: "Xanh Mono", monospace;
+  font-weight: bold;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+  background: var(--primary-color);
+  border-radius: 2px;
+}

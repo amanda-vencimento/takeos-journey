@@ -1,6 +1,9 @@
 :root {
   --primary-color: rgba(180, 66, 40, 0.75);
   --overlay-color: rgba(24, 39, 051, 0.85);
+  --menu-words-color: rgb(238, 240, 240);
+  --button-bg-color: rgba(247, 178, 52, 0.75);
+
   --menu-speed: 0.75s;
 }
 
